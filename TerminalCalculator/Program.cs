@@ -56,6 +56,15 @@
                     result/= numbers[i];
                 }
                 break;
+            case "sqrt":
+                if(numbers.Length >= 2)
+                {
+                    Console.WriteLine("Can only square root one number at a time.");
+                    return;
+                }
+                
+                result = Math.Sqrt(numbers[0]); //Don't ask why this took me more than 5 mins lol -HW
+                break;
             default:
                 Console.WriteLine("Not supported operation!");
                 return;
