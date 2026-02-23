@@ -56,6 +56,25 @@
                     result/= numbers[i];
                 }
                 break;
+            case "sqrt":
+                result = numbers[0];
+                for (int i = 0; i < numbers.Length; i++)
+                {
+                    if (numbers[i] < 0)
+                    {
+                        Console.WriteLine("The square root of negative numbers is not defined");
+                        return;
+                    }
+                }
+                
+                if(numbers.Length >= 2)
+                {
+                    Console.WriteLine("Can only square root one number at a time.");
+                    return;
+                }
+                
+                result = Math.Sqrt(numbers[0]); //Don't ask why this took me more than 5 mins lol -HW
+                break;
             default:
                 Console.WriteLine("Not supported operation!");
                 return;
