@@ -1,4 +1,4 @@
-Simple terminal calculator written in C#. This is my first C# project and probably very bad.
+Terminal calculator written in C#. This is my first public C# project, and is very simple for that reason.
 
 ```
 time ./TerminalCalculator divide 20,40
